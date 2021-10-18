@@ -10,10 +10,7 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 
 import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
-import com.google.android.material.textfield.TextInputEditText;
-import com.google.android.material.textfield.TextInputLayout;
 import com.vladbstrv.noteapp.R;
-import com.vladbstrv.noteapp.data.Data;
 import com.vladbstrv.noteapp.data.DataImpl;
 import com.vladbstrv.noteapp.models.Note;
 

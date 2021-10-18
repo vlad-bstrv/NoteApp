@@ -5,13 +5,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.vladbstrv.noteapp.R;
-import com.vladbstrv.noteapp.data.Data;
-import com.vladbstrv.noteapp.data.DataImpl;
 import com.vladbstrv.noteapp.models.Note;
 
 import java.util.List;
@@ -33,11 +31,19 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.ViewHolder> {
         return new ViewHolder(view);
     }
 
+
+
     @Override
     public void onBindViewHolder(NoteAdapter.ViewHolder holder, int position) {
         Note note = notes.get(position);
         holder.itemNoteTitle.setText(note.getTitle());
         holder.itemNoteText.setText(note.getText());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(v.getContext(), holder.itemNoteTitle.getText(), Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
     @Override

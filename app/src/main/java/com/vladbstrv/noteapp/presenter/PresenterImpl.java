@@ -1,7 +1,5 @@
 package com.vladbstrv.noteapp.presenter;
 
-import com.vladbstrv.noteapp.data.Data;
-import com.vladbstrv.noteapp.data.DataImpl;
 import com.vladbstrv.noteapp.ui.MainFragment;
 
 public class PresenterImpl implements Presenter {

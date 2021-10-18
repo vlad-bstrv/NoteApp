@@ -18,6 +18,7 @@ public class DataImpl implements Data {
     public static DataImpl getInstance() {
         if(instance == null) {
             instance = new DataImpl();
+
         }
         return instance;
     }
